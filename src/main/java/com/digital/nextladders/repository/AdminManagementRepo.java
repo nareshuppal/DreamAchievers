@@ -17,6 +17,7 @@ public class AdminManagementRepo {
         List<Products> productsList= new ArrayList<Products>();
 
         //access mongo DB and get list of all products in DB
+        System.out.println("inside repo");
         return productsList;
     }
 }
