@@ -12,12 +12,16 @@ import java.util.List;
 @Repository
 public class AdminManagementRepo {
 
-    public List<Products> getAllProducts(){
-
+    public List<Products> findAll(){
         List<Products> productsList= new ArrayList<Products>();
 
         //access mongo DB and get list of all products in DB
         System.out.println("inside repo");
         return productsList;
+    }
+
+    public Products findBy(String productName)
+    {
+        return new Products();
     }
 }
