@@ -25,8 +25,7 @@ public class AdminManagementService {
    public List<Products> getAllProducts(){
 
        List<Products> productsList= new ArrayList<Products>();
-       productsList=adminManagementRepo.findAll();
-       productsRepository.findByProductName("test");
+       productsList=productsRepository.findAll();
       // productsRepository.updateProducts("productTest2","test2");
        return productsList;
    }

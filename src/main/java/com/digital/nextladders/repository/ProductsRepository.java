@@ -8,5 +8,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  */
 public interface ProductsRepository extends MongoRepository<Products, Long> {
 
-    Products findByProductName(String productName);
+    java.util.List<Products> findByProductName(String productName);
+    java.util.List<Products> findAll();
 }
